@@ -1,12 +1,10 @@
-import App from "./App.jsx"
-function Btn({data}) {
-    let clr=data.txt;
-    setClr=data.setColor;
+import React from "react"
+function Btn({txt="white",bg,setColor}) {
     return (
         <>
             <button className="outline-none px-4 py-1 rounded-full text-black shadow-lg c"
-                style={{ backgroundColor: clr, color:clr}}
-                onClick={()=>{setClr(bg)}}
+                style={{ backgroundColor: bg, color:txt}}
+                onClick={()=>{setColor(bg)}}
             >
                 {bg}
             </button>
