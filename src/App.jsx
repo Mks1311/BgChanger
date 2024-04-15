@@ -6,23 +6,23 @@ function App() {
   return (
     <>
 
-      <div className="w-full h-screen duration-200 "
+      <div className="w-full h-screen duration-200 flex flex-wrap justify-center"
         style={{ backgroundColor: color }}
       >
-        <div className="fixed flex w-auto flex-wrap justify-center bottom-12 inset-x-0 
-        gap-3 shadow-lg bg-white  py-2 rounded-3xl "
+        <div className="fixed flex w-auto flex-wrap justify-center bottom-12 right-15 left-15 
+        gap-3 shadow-lg bg-white  py-2 px-3 rounded-3xl "
         >
-          <Btn data={txt="Red",setColor} /> 
-          <Btn bg="Green" />
-          <Btn bg="Blue" />
-          <Btn bg="Olive" />
-          <Btn bg="Gray" />
-          <Btn txt="black" bg="Yellow" />
-          <Btn txt="black" bg="Pink" />
-          <Btn bg="Purple" />
-          <Btn txt="black" bg="Lavender" />
-          <Btn txt="black" bg="White" />
-          <Btn bg="Black" />
+          <Btn bg="Red" setColor={setColor} />
+          <Btn bg="Green" setColor={setColor} />
+          <Btn bg="Blue" setColor={setColor} />
+          <Btn bg="Olive" setColor={setColor} />
+          <Btn bg="Gray" setColor={setColor} />
+          <Btn txt="black" bg="Yellow" setColor={setColor} />
+          <Btn txt="black" bg="Pink" setColor={setColor} />
+          <Btn bg="Purple" setColor={setColor} />
+          <Btn txt="black" bg="Lavender" setColor={setColor} />
+          <Btn txt="black" bg="White" setColor={setColor} />
+          <Btn bg="Black" setColor={setColor} />
         </div>
       </div>
 
